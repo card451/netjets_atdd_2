@@ -40,7 +40,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="jruby-1.7.20-p551" jdkType="JRUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
