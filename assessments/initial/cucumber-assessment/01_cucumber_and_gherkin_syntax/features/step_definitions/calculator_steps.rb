@@ -1,5 +1,7 @@
 $:.unshift(File.dirname(__FILE__) + '/../../lib')
 require 'calculator'
+require 'test/unit/assertions'
+World(Test::Unit::Assertions)
 
 Before do
   @calc = Calculator.new
@@ -32,8 +34,8 @@ Then /^I should see the previously stored result$/ do
   assert_equal @result, @calc.current_display
 end
 
-When /^I use the special constant __$/ do |special_constant_name|
-  @calc.push_special __
+When /^I use the special constant (.*)$/ do |special_constant_name|
+  @calc.push_special special_constant_name
 end
 
 Then /^the current value on the screen should be (.*)$/ do |output|

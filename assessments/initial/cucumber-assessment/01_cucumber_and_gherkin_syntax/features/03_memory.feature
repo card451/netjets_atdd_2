@@ -5,7 +5,7 @@ Feature: Memory
 
   Scenario: Store and retrieve a result
     Given I have done some arithmetic
-    And I have cleared the screen
+    And I have __
     When I press recall
     Then I should see the previously stored result
 
