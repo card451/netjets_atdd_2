@@ -51,7 +51,7 @@ class AboutClasses < Test::Unit::TestCase
 
   def test_providing_initial_values_for_instance_variables
     fido = Dog6.new("Fido")
-    assert_equal __, fido.name
+    assert_equal "Fido", fido.name
   end
 
   def test_different_objects_have_different_instance_variables
