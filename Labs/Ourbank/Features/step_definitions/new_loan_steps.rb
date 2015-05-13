@@ -5,20 +5,25 @@ include PageObject::PageFactory
 
 
 When(/^Consumer submits valid new loan application$/) do
-  pending
+  goto_new_loan_page
+  #pending
   #Valid Name
   #Valid Address
   #Loan amount > 0 and < MAX
 
+
 end
 
 Then(/^Confirmation message displayed$/) do
-  pending
+  goto_new_loan_page
+  #pending
   #Confirmation message displays
+
+
 end
 
 When(/^Consumer submits a new loan application with (.*)$/) do |invalid_criteria|
-  pending
+  #pending
 def invalid_criteria
   #Invalid Criteria
   #Blank Name
@@ -29,6 +34,6 @@ end
 end
 
 Then(/^Invalid criteria error message is displayed$/) do
-  pending
+  #pending
 #Invalid Criteria error message displays
 end
