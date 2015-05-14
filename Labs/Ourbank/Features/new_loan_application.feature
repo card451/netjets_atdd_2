@@ -12,5 +12,6 @@ Feature: New Loan Application
     |0 loan amount   |
     |blank name      |
     |blank address   |
+    |max loan amount |
 
 

@@ -6,38 +6,42 @@ include PageObject::PageFactory
 
 When(/^Consumer submits valid new loan application$/) do
 #todo
-#  goto_new_loan_page
-  #pending
-  #Valid Name
-  #Valid Address
-  #Loan amount > 0 and < MAX
-
+  goto_ourbank
+  @loan_confirmation_message = submit_new_loan_application
  end
 
 Then(/^Confirmation message displayed$/) do
   #todo
-  #goto_new_loan_page
-  #pending
-  #Confirmation message displays
-
-
+  expect(@loan_confirmation_message).to eq 'Confirmation Message text'
  end
 
-When(/^Consumer submits a new loan application with (.*)$/) do |invalid_criteria|
+When(/^Consumer submits a new loan application with 0 loan amount$/) do
   #todo
+  goto_ourbank
+  @error_loan_msg = submit_0_loan_amount_application
+end
 
-  #goto_new_loan_page
-def invalid_criteria
-  #Invalid Criteria
-  #Blank Name
-  #Blank Address
-  #Loan Amount <= 0
-  #Loan Amount >= MAX
- end
+When(/^Consumer submits a new loan application with blank name$/) do
+  #todo
+  goto_ourbank
+  @error_loan_msg = submit_blank_name_application
+end
+
+When(/^Consumer submits a new loan application with blank address$/) do
+  #todo
+  goto_ourbank
+  @error_loan_msg = submit_blank_address_application
+end
+
+When(/^Consumer submits a new loan application with max loan amount$/) do
+  #todo
+  goto_ourbank
+  @error_loan_msg = submit_max_loan_amount_application
 end
 
 Then(/^Invalid criteria error message is displayed$/) do
   #todo
   #pending
-#Invalid Criteria error message displays
+expect(@error_loan_msg).to eq 'Please enter valid values for loan application'
 end
+
