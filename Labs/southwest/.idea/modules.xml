@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../assessments/final/cucumber-assessment/01_cucumber_and_gherkin_syntax/.idea/01_cucumber_and_gherkin_syntax.iml" filepath="$PROJECT_DIR$/../../assessments/final/cucumber-assessment/01_cucumber_and_gherkin_syntax/.idea/01_cucumber_and_gherkin_syntax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../assessments/final/cucumber-assessment/03_web_app/.idea/03_web_app.iml" filepath="$PROJECT_DIR$/../../assessments/final/cucumber-assessment/03_web_app/.idea/03_web_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../assessments/final/cucumber-assessment/04_web_app_with_page_objects/.idea/04_web_app_with_page_objects.iml" filepath="$PROJECT_DIR$/../../assessments/final/cucumber-assessment/04_web_app_with_page_objects/.idea/04_web_app_with_page_objects.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ourbank/.idea/Ourbank.iml" filepath="$PROJECT_DIR$/../ourbank/.idea/Ourbank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SimpleScript/.idea/SimpleScript.iml" filepath="$PROJECT_DIR$/../SimpleScript/.idea/SimpleScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../assessments/final/ruby-assessment/.idea/ruby-assessment.iml" filepath="$PROJECT_DIR$/../../assessments/final/ruby-assessment/.idea/ruby-assessment.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/southwest.iml" filepath="$PROJECT_DIR$/.idea/southwest.iml" />
     </modules>
   </component>
