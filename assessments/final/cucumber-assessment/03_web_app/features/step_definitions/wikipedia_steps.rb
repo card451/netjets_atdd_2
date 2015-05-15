@@ -1,11 +1,13 @@
+require 'locale'
 require 'watir-webdriver'
+
 require 'test/unit/assertions'
 
 include Test::Unit::Assertions
 
 
 When(/^I access Wikipedia for my language$/) do
-  @browser.goto "http://wikipedia.com"
+  @browser.goto "http://www.wikipedia.org"
   language = Locale.current.language
   @browser.link(:xpath => "//div[@lang='#{language}']/a[1]").click
 end
@@ -29,4 +31,9 @@ end
 
 And(/^I am shown names of (\d+) recently deceased individuals on the dashboard$/) do |arg1|
   pending # express the regexp above with the code you wish you had
+  inspect
+end
+
+And(/^I can access Wikinews from the dashboard$/) do
+  pending
 end
