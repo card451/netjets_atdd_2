@@ -11,6 +11,6 @@ Before do
     end
 end
 
-after do
+After do
   @browser.close
 end
